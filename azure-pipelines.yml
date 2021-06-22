@@ -8,7 +8,8 @@ trigger:
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: "$(subscriptionId)"
+  # azureSubscription: $(serviceConnectionToAzure)
+  azureSubscription: "java-functions"
 
   # Web app name
   webAppName: "nrmejavafunctions"
